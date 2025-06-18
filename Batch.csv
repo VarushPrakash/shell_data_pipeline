@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Processing all CSV files in current directory..."
+for file in *.csv; do
+    echo "📄 Found file: $file"
+    name=$(basename "$file" .csv)
+    echo "👉 Processing $name"
+    echo "Completed processing of $file ✅"
+    echo "-----------------------------"
+done
