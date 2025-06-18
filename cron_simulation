@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "⏰ Simulating a cron job at: $(date)" >> cron_log.txt
+./log_parser.sh >> cron_log.txt
+echo "---------------------------------" >> cron_log.txt
